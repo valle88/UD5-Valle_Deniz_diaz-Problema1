@@ -19,7 +19,7 @@ public class AirGuagua400 implements Plane {
 
     @Override
     public void refuel() {
-
+        fuel = maxFuel;
     }
 
     @Override
