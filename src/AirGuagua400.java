@@ -24,7 +24,7 @@ public class AirGuagua400 implements Plane {
 
     @Override
     public void takeOff() {
-        int nivel = fuel- 5;
+         fuel -= 5;
         takeOff = !takeOff;
 
 
@@ -32,8 +32,8 @@ public class AirGuagua400 implements Plane {
 
     @Override
     public void flight() {
-        int nivel = fuel + 10;
         movementList.add(1,"moviminto1");
+        fuel  -= 10;
     }
 
     @Override
