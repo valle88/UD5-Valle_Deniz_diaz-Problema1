@@ -24,7 +24,9 @@ public class AirGuagua400 implements Plane {
 
     @Override
     public void takeOff() {
+        int nivel = fuel- 5;
         takeOff = !takeOff;
+
 
     }
 
@@ -42,7 +44,7 @@ public class AirGuagua400 implements Plane {
     @Override
     public String status() {
         return "El avion "+ matricula  + "\n" +
-                "tiene el nivel combustible: " + fuel + "\n" +
+                "tiene el nivel combustible: " + fuelLevel() + "\n" +
                 "y a seguido el siguiente pla de vuelo " + movementList + "\n";
     }
 }
