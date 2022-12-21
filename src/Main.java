@@ -6,13 +6,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime la matricula:");
         String matricula = sc.nextLine();
-        System.out.println("Dime el nivel gasolina de inicio:");
-        String gasolina = sc.nextLine();
+
+
 
 
 
 
         AirGuagua400 f10 = new AirGuagua400();
+        //f10.fuelLevel();
+        //f10.flight();
+        //f10.refuel();
+
         System.out.println(f10.toString());
 
 
