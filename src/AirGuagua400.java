@@ -2,19 +2,15 @@ import java.util.ArrayList;
 
 public class AirGuagua400 implements Plane {
     String matricula;
-    int maxFuel= 0;
-    int fuel;
+    int maxFuel= 100;
+    int fuel= 0;
     ArrayList<String>movementList = new ArrayList<>();
-    private boolean landingGear;
+    private boolean landingGear = false;
+    private boolean takeOff = false;
 
-    public AirGuagua400(String matricula, int maxFuel, int fuel, ArrayList<String> movementList, boolean landingGear) {
-        this.matricula = matricula;
-        this.maxFuel = maxFuel;
-        this.fuel = fuel;
-        this.movementList = movementList;
-        this.landingGear=true;
+
+    public AirGuagua400() {
     }
-
 
     @Override
     public float fuelLevel() {
@@ -28,12 +24,14 @@ public class AirGuagua400 implements Plane {
 
     @Override
     public void takeOff() {
+        takeOff = !takeOff;
 
     }
 
     @Override
     public void flight() {
-
+        int nivel = fuel + 10;
+        movementList.add(1,"moviminto1");
     }
 
     @Override
