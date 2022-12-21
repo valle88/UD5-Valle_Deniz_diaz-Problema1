@@ -9,8 +9,14 @@ public class Main {
         System.out.println("Dime el nivel gasolina de inicio:");
         String gasolina = sc.nextLine();
 
-        AirGuagua400 f10 = new AirGuagua400();
 
-        System.out.println(f10);
+
+
+        AirGuagua400 f10 = new AirGuagua400();
+        System.out.println(f10.toString());
+
+
+
+
     }
 }
